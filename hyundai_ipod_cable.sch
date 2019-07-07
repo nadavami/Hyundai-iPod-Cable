@@ -1,0 +1,371 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R_US R5
+U 1 1 5D180C43
+P 6000 3550
+F 0 "R5" H 6068 3596 50  0000 L CNN
+F 1 "51k" H 6068 3505 50  0000 L CNN
+F 2 "" V 6040 3540 50  0001 C CNN
+F 3 "~" H 6000 3550 50  0001 C CNN
+	1    6000 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R1
+U 1 1 5D180CC7
+P 6250 3300
+F 0 "R1" H 6318 3346 50  0000 L CNN
+F 1 "75k" H 6318 3255 50  0000 L CNN
+F 2 "" V 6290 3290 50  0001 C CNN
+F 3 "~" H 6250 3300 50  0001 C CNN
+	1    6250 3300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6000 3400 6000 3300
+Wire Wire Line
+	6000 3300 6100 3300
+Connection ~ 6000 3300
+Text GLabel 4300 3750 0    50   Input Italic 0
+ipod_dock_connector_D+
+$Comp
+L power:GND #PWR?
+U 1 1 5D180DEF
+P 6000 3800
+F 0 "#PWR?" H 6000 3550 50  0001 C CNN
+F 1 "GND" H 6005 3627 50  0000 C CNN
+F 2 "" H 6000 3800 50  0001 C CNN
+F 3 "" H 6000 3800 50  0001 C CNN
+	1    6000 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5D180E48
+P 6500 3200
+F 0 "#PWR?" H 6500 3050 50  0001 C CNN
+F 1 "+5V" H 6515 3373 50  0000 C CNN
+F 2 "" H 6500 3200 50  0001 C CNN
+F 3 "" H 6500 3200 50  0001 C CNN
+	1    6500 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 3700 6000 3800
+$Comp
+L Device:R_US R6
+U 1 1 5D181001
+P 6700 3200
+F 0 "R6" H 6768 3246 50  0000 L CNN
+F 1 "51k" H 6768 3155 50  0000 L CNN
+F 2 "" V 6740 3190 50  0001 C CNN
+F 3 "~" H 6700 3200 50  0001 C CNN
+	1    6700 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R2
+U 1 1 5D181008
+P 6950 2950
+F 0 "R2" H 7018 2996 50  0000 L CNN
+F 1 "47k" H 7018 2905 50  0000 L CNN
+F 2 "" V 6990 2940 50  0001 C CNN
+F 3 "~" H 6950 2950 50  0001 C CNN
+	1    6950 2950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6700 3050 6700 2950
+Wire Wire Line
+	6700 2950 6800 2950
+Text GLabel 4300 3650 0    50   Input Italic 0
+ipod_dock_connector_D-
+$Comp
+L power:GND #PWR?
+U 1 1 5D181014
+P 6700 3450
+F 0 "#PWR?" H 6700 3200 50  0001 C CNN
+F 1 "GND" H 6705 3277 50  0000 C CNN
+F 2 "" H 6700 3450 50  0001 C CNN
+F 3 "" H 6700 3450 50  0001 C CNN
+	1    6700 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5D18101A
+P 7200 2850
+F 0 "#PWR?" H 7200 2700 50  0001 C CNN
+F 1 "+5V" H 7215 3023 50  0000 C CNN
+F 2 "" H 7200 2850 50  0001 C CNN
+F 3 "" H 7200 2850 50  0001 C CNN
+	1    7200 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 2950 7200 2950
+Wire Wire Line
+	7200 2950 7200 2850
+Wire Wire Line
+	6700 3350 6700 3450
+$Comp
+L Device:Q_PNP_BEC Q1
+U 1 1 5D18128C
+P 6500 4750
+F 0 "Q1" H 6691 4796 50  0000 L CNN
+F 1 "KTC3875S-Y (ALY)" H 6691 4705 50  0000 L CNN
+F 2 "" H 6700 4850 50  0001 C CNN
+F 3 "~" H 6500 4750 50  0001 C CNN
+	1    6500 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R7
+U 1 1 5D1816F1
+P 6200 5000
+F 0 "R7" H 6268 5046 50  0000 L CNN
+F 1 "47k" H 6268 4955 50  0000 L CNN
+F 2 "" V 6240 4990 50  0001 C CNN
+F 3 "~" H 6200 5000 50  0001 C CNN
+	1    6200 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R4
+U 1 1 5D1816F8
+P 5950 4750
+F 0 "R4" H 6018 4796 50  0000 L CNN
+F 1 "1k" H 6018 4705 50  0000 L CNN
+F 2 "" V 5990 4740 50  0001 C CNN
+F 3 "~" H 5950 4750 50  0001 C CNN
+	1    5950 4750
+	0    -1   -1   0   
+$EndComp
+Text GLabel 4300 3850 0    50   Input Italic 0
+ipod_dock_connector_ACC+ID
+$Comp
+L power:GND #PWR?
+U 1 1 5D181704
+P 6200 5250
+F 0 "#PWR?" H 6200 5000 50  0001 C CNN
+F 1 "GND" H 6205 5077 50  0000 C CNN
+F 2 "" H 6200 5250 50  0001 C CNN
+F 3 "" H 6200 5250 50  0001 C CNN
+	1    6200 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5D18170A
+P 5700 4650
+F 0 "#PWR?" H 5700 4500 50  0001 C CNN
+F 1 "+5V" H 5715 4823 50  0000 C CNN
+F 2 "" H 5700 4650 50  0001 C CNN
+F 3 "" H 5700 4650 50  0001 C CNN
+	1    5700 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 5150 6200 5250
+$Comp
+L Device:R_US R3
+U 1 1 5D181C2A
+P 6350 4300
+F 0 "R3" H 6418 4346 50  0000 L CNN
+F 1 "560k" H 6418 4255 50  0000 L CNN
+F 2 "" V 6390 4290 50  0001 C CNN
+F 3 "~" H 6350 4300 50  0001 C CNN
+	1    6350 4300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6500 4300 6600 4300
+Wire Wire Line
+	6100 4750 6200 4750
+Wire Wire Line
+	6200 4750 6200 4850
+Wire Wire Line
+	5800 4750 5700 4750
+Wire Wire Line
+	5700 4750 5700 4650
+Wire Wire Line
+	6300 4750 6200 4750
+Connection ~ 6200 4750
+Wire Wire Line
+	6600 4300 6600 4550
+$Comp
+L power:GND #PWR?
+U 1 1 5D1837EC
+P 6600 5050
+F 0 "#PWR?" H 6600 4800 50  0001 C CNN
+F 1 "GND" H 6605 4877 50  0000 C CNN
+F 2 "" H 6600 5050 50  0001 C CNN
+F 3 "" H 6600 5050 50  0001 C CNN
+	1    6600 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 5050 6600 4950
+Text GLabel 4300 4350 0    50   Input ~ 0
+ipod_dock_connector_GND
+$Comp
+L power:GND #PWR?
+U 1 1 5D222E87
+P 4750 4550
+F 0 "#PWR?" H 4750 4300 50  0001 C CNN
+F 1 "GND" H 4755 4377 50  0000 C CNN
+F 2 "" H 4750 4550 50  0001 C CNN
+F 3 "" H 4750 4550 50  0001 C CNN
+	1    4750 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 4350 4750 4550
+Text GLabel 4300 3350 0    50   Input ~ 0
+ipod_dock_connector_5VDC
+$Comp
+L power:+5V #PWR?
+U 1 1 5D22742C
+P 5050 3100
+F 0 "#PWR?" H 5050 2950 50  0001 C CNN
+F 1 "+5V" H 5000 3250 50  0000 C CNN
+F 2 "" H 5050 3100 50  0001 C CNN
+F 3 "" H 5050 3100 50  0001 C CNN
+	1    5050 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:USB_A J?
+U 1 1 5D228076
+P 7550 2500
+F 0 "J?" H 7750 2950 50  0000 R CNN
+F 1 "USB_A" H 7750 2850 50  0000 R CNN
+F 2 "" H 7700 2450 50  0001 C CNN
+F 3 " ~" H 7700 2450 50  0001 C CNN
+	1    7550 2500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D22913B
+P 7550 3050
+F 0 "#PWR?" H 7550 2800 50  0001 C CNN
+F 1 "GND" H 7555 2877 50  0000 C CNN
+F 2 "" H 7550 3050 50  0001 C CNN
+F 3 "" H 7550 3050 50  0001 C CNN
+	1    7550 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7650 3000 7550 3000
+Connection ~ 7550 3000
+Wire Wire Line
+	7550 3000 7550 3050
+$Comp
+L power:+5V #PWR?
+U 1 1 5D22B733
+P 7150 2200
+F 0 "#PWR?" H 7150 2050 50  0001 C CNN
+F 1 "+5V" H 7165 2373 50  0000 C CNN
+F 2 "" H 7150 2200 50  0001 C CNN
+F 3 "" H 7150 2200 50  0001 C CNN
+	1    7150 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7150 2200 7150 2300
+Wire Wire Line
+	7150 2300 7250 2300
+Text GLabel 4300 3450 0    50   Input ~ 0
+ipod_dock_connector_RX
+Text GLabel 4300 3550 0    50   Input ~ 0
+ipod_dock_connector_TX
+$Comp
+L Connector:AudioJack4_Ground J?
+U 1 1 5D22CBD7
+P 5050 4050
+F 0 "J?" H 5150 3550 50  0000 R CNN
+F 1 "AudioPlug" H 5150 3650 50  0000 R CNN
+F 2 "" H 5050 4050 50  0001 C CNN
+F 3 "~" H 5050 4050 50  0001 C CNN
+	1    5050 4050
+	-1   0    0    -1  
+$EndComp
+Text GLabel 4300 4250 0    50   Input ~ 0
+ipod_dock_connector_left_audio
+Text GLabel 4300 4150 0    50   Input ~ 0
+ipod_dock_connector_right_audio
+Text GLabel 4300 4050 0    50   Input ~ 0
+ipod_dock_connector_video_out
+Text GLabel 4300 3950 0    50   Input ~ 0
+ipod_dock_connector_Audio_GND
+Wire Wire Line
+	5050 3100 5050 3350
+Wire Wire Line
+	5350 2950 6700 2950
+Connection ~ 6700 2950
+Wire Wire Line
+	6400 3300 6500 3300
+Wire Wire Line
+	6500 3300 6500 3200
+Wire Wire Line
+	7250 2600 5250 2600
+Wire Wire Line
+	7250 2500 5150 2500
+Wire Wire Line
+	5150 2500 5150 3450
+Wire Wire Line
+	5250 2600 5250 3550
+Wire Wire Line
+	5350 2950 5350 3650
+Wire Wire Line
+	7650 2900 7650 3000
+Wire Wire Line
+	7550 2900 7550 3000
+Wire Wire Line
+	5450 3300 5450 3750
+Wire Wire Line
+	5450 3300 6000 3300
+Wire Wire Line
+	5450 4300 6200 4300
+Wire Wire Line
+	5450 3850 5450 4300
+Wire Wire Line
+	4300 3350 5050 3350
+Wire Wire Line
+	4300 3450 5150 3450
+Wire Wire Line
+	4300 3550 5250 3550
+Wire Wire Line
+	4300 3650 5350 3650
+Wire Wire Line
+	4300 3750 5450 3750
+Wire Wire Line
+	4300 3850 5450 3850
+Wire Wire Line
+	4300 4350 4750 4350
+Wire Wire Line
+	4300 3950 4850 3950
+Wire Wire Line
+	4850 4050 4300 4050
+Wire Wire Line
+	4300 4150 4850 4150
+Wire Wire Line
+	4850 4250 4300 4250
+Text Notes 7350 7500 0    50   ~ 10
+Hyundai/Kia iPod Cable
+$EndSCHEMATC
